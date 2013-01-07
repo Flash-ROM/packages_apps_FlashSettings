@@ -26,6 +26,12 @@
             android:summary="@string/dbl_tap_vib_summary"
             android:defaultValue="true" />
 
+        <com.flash.settings.preferences.SystemSettingSwitchPreference
+            android:key="headset_connect_player"
+            android:title="@string/headset_connect_player_title"
+            android:summary="@string/headset_connect_player_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
