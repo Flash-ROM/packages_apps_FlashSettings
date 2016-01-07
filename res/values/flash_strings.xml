@@ -283,6 +283,9 @@ device speaker</string>
     <string name="notification_drawer_settings_title">Notification drawer</string>
     <string name="notification_panel_title">Notification panel</string>
     <string name="qs_panel_title">Quick settings panel</string>
+    <!-- Auto brightness icon -->
+    <string name="brightness_icon_title">Brightness icon </string>
+    <string name="brightness_icon_summary">Show a brightness icon to the left of the brighness slider to adjust auto-brightness</string>
     <!-- Quick pull down-->
     <string name="quick_pulldown_title">Quick pulldown</string>
     <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
