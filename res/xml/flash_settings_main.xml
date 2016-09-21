@@ -43,6 +43,11 @@
         android:title="@string/flash_buttons">
 
         <PreferenceScreen
+            android:fragment="com.flash.settings.fragments.NavbarSettings"
+            android:key="flash_navbar_settings"
+            android:title="@string/navbar_settings_title"/>
+
+        <PreferenceScreen
             android:fragment="com.flash.settings.fragments.PowerMenuSettings"
             android:key="flash_powermenu_settings"
             android:title="@string/powermenu_settings_title"/>
