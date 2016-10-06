@@ -23,6 +23,16 @@
         android:entryValues="@array/immersive_recents_values"
         android:persistent="false" />
 
+    <PreferenceScreen
+        android:key="omniswitch"
+        android:title="@string/omniswitch_category"
+        android:summary="@string/omniswitch_category_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="org.omnirom.omniswitch"
+            android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
+    </PreferenceScreen>
+
     <com.flash.settings.preferences.SystemSettingSwitchPreference
         android:key="show_clear_all_recents"
         android:title="@string/show_clear_all_recents_button_title"

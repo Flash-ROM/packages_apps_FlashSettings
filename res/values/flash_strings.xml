@@ -429,6 +429,9 @@
 
     <!-- Recent Apps fragment -->
     <string name="recent_settings_title">Recent apps</string>
+    <!-- OmniSwitch -->
+    <string name="omniswitch_category">OmniSwitch</string>
+    <string name="omniswitch_category_summary">Manage settings and look</string>
     <!-- Recent clear all button and location -->
     <string name="show_clear_all_recents_button_title">Clear all FAB</string>
     <string name="show_clear_all_recents_button_summary_on">Show clear all FAB</string>
