@@ -18,6 +18,17 @@
         android:title="@string/flash_settings_title" >
 
     <PreferenceCategory
+        android:key="flash_interface"
+        android:title="@string/flash_interface">
+
+        <PreferenceScreen
+            android:fragment="com.flash.settings.fragments.LockScreenSettings"
+            android:key="flash_lockscreen_settings"
+            android:title="@string/lockscreen_settings_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="flash_buttons"
         android:title="@string/flash_buttons">
 
