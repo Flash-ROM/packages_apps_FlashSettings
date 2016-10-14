@@ -37,6 +37,11 @@
             android:key="flash_powermenu_settings"
             android:title="@string/powermenu_settings_title"/>
 
+        <PreferenceScreen
+            android:fragment="com.flash.settings.fragments.VolumeRockerSettings"
+            android:key="flash_volumerocker_settings"
+            android:title="@string/volumerocker_settings_title"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
