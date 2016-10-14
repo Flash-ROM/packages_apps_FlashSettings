@@ -432,6 +432,14 @@
     <!-- OmniSwitch -->
     <string name="omniswitch_category">OmniSwitch</string>
     <string name="omniswitch_category_summary">Manage settings and look</string>
+    <string name="aosp_recents_title">AOSP recents</string>
+    <string name="omniswitch_recents_title">OmniSwitch recents</string>
+    <string name="recents_use_omniswitch_title">Use for a recents alterative</string>
+    <string name="recents_use_omniswitch_summary">Use OmniSwitch instead of the default recents view</string>
+    <string name="omniswitch_start_settings_title">OmniSwitch settings</string>
+    <string name="omniswitch_start_settings_summary">View the settings for OmniSwitch</string>
+    <string name="omniswitch_first_time_title">Warning</string>
+    <string name="omniswitch_first_time_message">If using OmniSwitch as recents alterative, make sure you have OmniSwitch enabled</string>
     <!-- Recent clear all button and location -->
     <string name="show_clear_all_recents_button_title">Clear all FAB</string>
     <string name="show_clear_all_recents_button_summary_on">Show clear all FAB</string>
