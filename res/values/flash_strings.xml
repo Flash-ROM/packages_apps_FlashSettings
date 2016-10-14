@@ -18,6 +18,10 @@
     <!-- Categories -->
     <string name="flash_interface">Interface</string>
     <string name="flash_buttons">Buttons</string>
+    <string name="flash_system">System</string>
+
+    <!-- Display fragment -->
+    <string name="display_settings_title">Display</string>
 
     <!-- Lockscreen Fragment -->
     <string name="lockscreen_settings_title">Lockscreen</string>

@@ -54,4 +54,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="flash_system"
+        android:title="@string/flash_system">
+
+        <PreferenceScreen
+            android:fragment="com.flash.settings.fragments.DisplaySettings"
+            android:key="flash_display_settings"
+            android:title="@string/display_settings_title"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
