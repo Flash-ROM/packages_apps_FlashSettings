@@ -14,18 +14,6 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-        android:title="@string/flash_settings_title" >
-
-    <PreferenceCategory
-        android:key="flash_buttons"
-        android:title="@string/flash_buttons">
-
-        <PreferenceScreen
-            android:fragment="com.flash.settings.fragments.PowerMenuSettings"
-            android:key="flash_powermenu_settings"
-            android:title="@string/powermenu_settings_title"/>
-
-    </PreferenceCategory>
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
 </PreferenceScreen>
