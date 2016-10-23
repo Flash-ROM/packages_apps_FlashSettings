@@ -30,6 +30,7 @@ import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.SwitchPreference;
 
+import com.flash.settings.utils.Utils;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import com.android.settings.R;
@@ -47,6 +48,8 @@ public class RecentSettings extends SettingsPreferenceFragment
                                 OMNISWITCH_PACKAGE_NAME + ".SettingsActivity");
     private static final String CATEGORY_STOCK_RECENTS = "stock_recents";
     private static final String CATEGORY_OMNI_RECENTS = "omni_recents";
+    private static final String KEY_OMNISWITCH = "omniswitch";
+    private static final String KEY_OMNI_SWITCH_PACKAGE_NAME = "org.omnirom.omniswitch";
 
     private ListPreference mRecentsClearAllLocation;
     private ListPreference mImmersiveRecents;
@@ -54,6 +57,7 @@ public class RecentSettings extends SettingsPreferenceFragment
     private PreferenceCategory mOmniRecents;
     private SwitchPreference mRecentsUseOmniSwitch;
     private Preference mOmniSwitchSettings;
+    private PreferenceScreen mOmniSwitch;
     private boolean mOmniSwitchInitCalled;
 
     @Override
@@ -92,6 +96,11 @@ public class RecentSettings extends SettingsPreferenceFragment
         mOmniSwitchSettings = (Preference) prefScreen.findPreference(OMNISWITCH_START_SETTINGS);
         mOmniSwitchSettings.setEnabled(mRecentsUseOmniSwitch.isChecked());
         updateRecents();
+
+        mOmniSwitch = (PreferenceScreen) findPreference(KEY_OMNISWITCH);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_OMNI_SWITCH_PACKAGE_NAME)) {
+            prefScreen.removePreference(mOmniSwitch);
+        }
     }
 
     @Override
@@ -158,6 +167,9 @@ public class RecentSettings extends SettingsPreferenceFragment
         if (omniRecents) {
             mOmniRecents.setEnabled(true);
             mStockRecents.setEnabled(false);
+        } else if (!Utils.isPackageInstalled(getActivity(), OMNISWITCH_PACKAGE_NAME)) {
+            mOmniRecents.setEnabled(false);
+            mStockRecents.setEnabled(true);
         } else {
             mOmniRecents.setEnabled(true);
             mStockRecents.setEnabled(true);
