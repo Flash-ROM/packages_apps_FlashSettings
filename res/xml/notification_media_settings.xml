@@ -32,6 +32,11 @@
         android:key="notif_cat"
         android:title="@string/notif_cat_title" >
 
+        <PreferenceScreen
+            android:fragment="com.flash.settings.fragments.HeadsUpSettings"
+            android:key="heads_up_settings"
+            android:title="@string/headsup_settings_title" />
+
         <com.flash.settings.preferences.SystemSettingSwitchPreference
             android:key="battery_low_notification"
             android:title="@string/battery_low_notif_title"
