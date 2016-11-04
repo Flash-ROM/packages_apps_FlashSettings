@@ -73,6 +73,11 @@
             android:key="flash_notification_media_settings"
             android:title="@string/notification_media_settings_title"/>
 
+        <PreferenceScreen
+            android:fragment="com.flash.settings.fragments.MiscSettings"
+            android:key="flash_misc_settings"
+            android:title="@string/misc_settings_title"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
