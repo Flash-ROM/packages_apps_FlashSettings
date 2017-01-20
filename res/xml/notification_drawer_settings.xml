@@ -69,6 +69,12 @@
             android:summaryOff="@string/qs_tile_title_visibility_summary_off"
             android:defaultValue="true"/>
 
+        <com.flash.settings.preferences.SecureSettingSwitchPreference
+            android:key="qs_easy_toggle"
+            android:title="@string/qs_easy_toggle_title"
+            android:summary="@string/qs_easy_toggle_summary"
+            android:defaultValue="false" />
+
         <com.flash.settings.preferences.CustomSeekBarPreference
             android:key="qs_layout_columns"
             android:title="@string/qs_columns_title"
