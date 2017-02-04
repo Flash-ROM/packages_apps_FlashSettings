@@ -336,6 +336,8 @@
     <string name="qs_multiuser_switch_summary">Remove the multi-user switch in the header</string>
     <string name="qs_expand_indicator_title">Hide expand indicator</string>
     <string name="qs_expand_indicator_summary">Remove the expand indicator in the header</string>
+    <string name="qs_running_services_title">Hide running services icon</string>
+    <string name="qs_running_services_summary">Remove the running services icon in the header</string>
 
     <!-- Notification & Media fragment -->
     <string name="notification_media_settings_title">Media &amp; notifications</string>
