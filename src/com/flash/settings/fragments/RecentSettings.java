@@ -94,7 +94,6 @@ public class RecentSettings extends SettingsPreferenceFragment
         mRecentsUseOmniSwitch.setOnPreferenceChangeListener(this);
 
         mOmniSwitchSettings = (Preference) prefScreen.findPreference(OMNISWITCH_START_SETTINGS);
-        mOmniSwitchSettings.setEnabled(mRecentsUseOmniSwitch.isChecked());
         updateRecents();
 
         mOmniSwitch = (PreferenceScreen) findPreference(KEY_OMNISWITCH);
@@ -143,7 +142,6 @@ public class RecentSettings extends SettingsPreferenceFragment
 
             Settings.System.putInt(
                     resolver, Settings.System.RECENTS_USE_OMNISWITCH, value ? 1 : 0);
-            mOmniSwitchSettings.setEnabled(value);
             updateRecents();
             return true;
         }
@@ -166,12 +164,15 @@ public class RecentSettings extends SettingsPreferenceFragment
 
         if (omniRecents) {
             mOmniRecents.setEnabled(true);
+            mOmniSwitchSettings.setEnabled(true);
             mStockRecents.setEnabled(false);
         } else if (!Utils.isPackageInstalled(getActivity(), OMNISWITCH_PACKAGE_NAME)) {
             mOmniRecents.setEnabled(false);
+            mOmniSwitchSettings.setEnabled(false);
             mStockRecents.setEnabled(true);
         } else {
             mOmniRecents.setEnabled(true);
+            mOmniSwitchSettings.setEnabled(true);
             mStockRecents.setEnabled(true);
         }
     }

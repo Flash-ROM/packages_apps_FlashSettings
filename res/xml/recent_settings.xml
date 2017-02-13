@@ -54,23 +54,12 @@
             android:summary="@string/recents_use_omniswitch_summary"
             android:persistent="false" />
 
-        <PreferenceScreen
-            android:key="omniswitch_start_settings"
-            android:title="@string/omniswitch_start_settings_title"
-            android:summary="@string/omniswitch_start_settings_summary"
-            android:dependency="recents_use_omniswitch"
-            android:persistent="false" />
-
     </PreferenceCategory>
 
     <PreferenceScreen
-        android:key="omniswitch"
-        android:title="@string/omniswitch_category"
-        android:summary="@string/omniswitch_category_summary">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="org.omnirom.omniswitch"
-            android:targetClass="org.omnirom.omniswitch.SettingsActivity" />
-    </PreferenceScreen>
+        android:key="omniswitch_start_settings"
+        android:title="@string/omniswitch_start_settings_title"
+        android:summary="@string/omniswitch_start_settings_summary"
+        android:persistent="false" />
 
 </PreferenceScreen>
