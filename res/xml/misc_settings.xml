@@ -15,6 +15,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.flash.settings.preferences.GlobalSettingSwitchPreference
+         android:key="show_cpu"
+         android:title="@string/show_cpu_title"
+         android:summary="@string/show_cpu_summary" />
+
     <com.flash.settings.preferences.SystemSettingSwitchPreference
          android:key="toast_icon"
          android:title="@string/toast_icon_title"
