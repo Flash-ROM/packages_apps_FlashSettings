@@ -58,6 +58,13 @@
             android:defaultValue="false" />
 
         <com.flash.settings.preferences.SystemSettingSwitchPreference
+            android:key="status_bar_track_ticker"
+            android:title="@string/track_ticker_title"
+            android:summary="@string/track_ticker_summary"
+            android:dependency="status_bar_show_ticker"
+            android:defaultValue="true" />
+
+        <com.flash.settings.preferences.SystemSettingSwitchPreference
             android:key="battery_low_notification"
             android:title="@string/battery_low_notif_title"
             android:summary="@string/battery_low_notif_summary"
