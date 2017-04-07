@@ -55,7 +55,7 @@
             android:key="status_bar_show_ticker"
             android:title="@string/ticker_title"
             android:summary="@string/ticker_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <com.flash.settings.preferences.SystemSettingSwitchPreference
             android:key="status_bar_track_ticker"

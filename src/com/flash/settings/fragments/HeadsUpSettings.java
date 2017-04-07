@@ -100,7 +100,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         super.onStart();
         final SettingsActivity activity = (SettingsActivity) getActivity();
         mEnabledSwitch = new BaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                Settings.System.HEADS_UP_USER_ENABLED, true, this);
+                Settings.System.HEADS_UP_USER_ENABLED, false, this);
     }
 
     @Override
@@ -178,7 +178,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
     private boolean getUserHeadsUpState() {
          return Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.HEADS_UP_USER_ENABLED,
-                Settings.System.HEADS_UP_USER_ON,
+                Settings.System.HEADS_UP_USER_OFF,
                 UserHandle.USER_CURRENT) != 0;
     }
 
